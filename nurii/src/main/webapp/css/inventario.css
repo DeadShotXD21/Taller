@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    background-image: url('../images/inventario1.png'); /* Cambia la ruta a tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Contenedor que centra vertical y horizontal */
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    padding: 80px;
+}
+
+/* Fondo blanco, sombra, bordes redondeados, y ancho máximo */
+.form-container {
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+ h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    font-weight: bold;
+}
