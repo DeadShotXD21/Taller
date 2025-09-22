@@ -88,7 +88,7 @@
                             <div class="mb-3">
                                 <label for="distrito" class="form-label">Distrito</label>
                                 <input type="text" class="form-control" id="distrito" name="distrito" 
-                                       value="<%= beanUsu.getDistrito() %>" required>
+                                       value="<%= beanUsu.getDireccion() %>" required>
                                 <div class="invalid-feedback">
                                     Por favor ingrese un Distrito válido.
                                 </div>

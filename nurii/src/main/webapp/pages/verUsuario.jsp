@@ -66,10 +66,10 @@
                                 <label for="dni" class="form-label">DNI</label>
                                 <input type="number" step="0.01" class="form-control" id="dni" name="dni" value="<%= beanUsu.getDni() %>" disabled>
                             </div>
-                            <!-- distrito -->
+                            <!-- direccion -->
                             <div class="mb-3">
-                                <label for="dni" class="form-label">Distrito</label>
-                                <input type="text" step="0.01" class="form-control" id="distrito" name="distrito" value="<%= beanUsu.getDistrito() %>" disabled>
+                                <label for="dni" class="form-label">direccion</label>
+                                <input type="text" step="0.01" class="form-control" id="direccion" name="direccion" value="<%= beanUsu.getDireccion() %>" disabled>
                             </div>
                             <!-- ROL-ID -->
                             <div class="mb-3">

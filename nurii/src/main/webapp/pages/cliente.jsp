@@ -4,13 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller Mecánico</title>
-    <link rel="stylesheet" href="../css/inicio.css" type="text/css">
-    <link rel="stylesheet" href="../css/styles.css" type="text/css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css ">
+    <title>Panel Cliente</title>
+    <link rel="stylesheet" href="../css/main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         /* Ajustes específicos para el contenido del cliente */
         #inicio-cliente {
@@ -53,46 +49,32 @@
     </style>
 </head>
 <body>
-    <%-- FONDO VIDEO --%>
-    <video autoplay loop muted id="video_background">
-        <source src="../videos/auto.mp4" type="video/mp4">
-    </video>
+    <jsp:include page="header.jsp" />
+    <jsp:include page="menu_cliente.jsp" />
 
-    <%@ include file="header.jsp" %>
-    <%@ include file="menu_cliente.jsp" %>
-
-    <section id="inicio-cliente">
-        <div class="container">
-           	<h1>Bienvenido, <%= session.getAttribute("nombre") %></h1>
-            <p>Desde tu panel de cliente puedes:</p>
-            <ul class="acciones-cliente">
-                <li><a href="recepcion.jsp"><i class="fas fa-tools"></i> Solicitar Orden de Servicio</a></li>
-                <li><a href="historial.jsp"><i class="fas fa-history"></i> Ver Historial de Servicios</a></li>
-                <li><a href="perfil_cliente.jsp"><i class="fas fa-user"></i> Mi Perfil</a></li>
-            </ul>
-        </div>
-    </section>
+    <!-- Contenedor principal -->
+    <div id="contenido">
+        <section id="inicio-cliente">
+            <div class="container">
+                <h1>Bienvenido, <%= session.getAttribute("nombre") %></h1>
+                <p>Desde tu panel de cliente puedes:</p>
+                <ul class="acciones-cliente">
+                    <li><a href="recepcion.jsp"><i class="fas fa-tools"></i> Solicitar Orden de Servicio</a></li>
+                    <li><a href="historial.jsp"><i class="fas fa-history"></i> Ver Historial de Servicios</a></li>
+                    <li><a href="perfil_cliente.jsp"><i class="fas fa-user"></i> Mi Perfil</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
 
     <!-- Redes sociales -->
     <div class="wsp">
-        <a href="https://wa.me/918526203 " target="_blank">
-            <img src="../images/whatsapp.png" alt="WhatsApp">
-        </a>
+        <a href="https://wa.me/918526203" target="_blank"><img src="../images/whatsapp.png" alt="WhatsApp"></a>
     </div>
     <div class="ig">
-        <a href="https://instagram.com/taller_mecanico " target="_blank">
-            <img src="../images/instagram.png" alt="Instagram">
-        </a>
+        <a href="https://instagram.com/taller_mecanico" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
     </div>
 
-    <%@ include file="footer.jsp" %>
-
-    <script>
-        document.querySelectorAll('.card-flip').forEach(card => {
-            card.addEventListener('click', () => {
-                card.classList.toggle('flipped');
-            });
-        });
-    </script>
+    <jsp:include page="footer.jsp" />
 </body>
 </html>

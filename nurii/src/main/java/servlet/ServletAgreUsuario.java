@@ -12,8 +12,10 @@ import mysql.Sql_Usuario;
 
 @WebServlet("/ServletAgreUsuario")
 public class ServletAgreUsuario extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    private static final long serialVersionUID = 1L;
+
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
         try {
             // 1. Captura datos
             String nombre      = request.getParameter("nombre");
@@ -21,16 +23,24 @@ public class ServletAgreUsuario extends HttpServlet {
             String email       = request.getParameter("email");
             String telefono    = request.getParameter("telefono");
             String dni         = request.getParameter("dni");
-            String distrito    = request.getParameter("distrito");
+            String direccion   = request.getParameter("direccion");
             String clave       = request.getParameter("clave");
             String confirClave = request.getParameter("confirClave");
 
+            // 2. Validación de contraseñas
             if (!clave.equals(confirClave)) {
                 response.sendRedirect("registrarCliente.jsp?error=clave");
                 return;
             }
 
-            // 3. Rellenar beans
+            // 3. Validación de email (debe contener dominio válido, ej: .com, .net, .org, etc.)
+            String regexEmail = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$";
+            if (email == null || !email.matches(regexEmail)) {
+                response.sendRedirect("registrarCliente.jsp?error=email");
+                return;
+            }
+
+            // 4. Rellenar beans
             beanUsuario beanUsu = new beanUsuario();
             beanAcceso  beanAcc = new beanAcceso();
 
@@ -39,12 +49,12 @@ public class ServletAgreUsuario extends HttpServlet {
             beanUsu.setEmail(email);
             beanUsu.setTelefono(telefono);
             beanUsu.setDni(dni);
-            beanUsu.setDistrito(distrito);
+            beanUsu.setDireccion(direccion);
             beanUsu.setRol_Id(1);                 
             beanAcc.setLogin(email);
             beanAcc.setClave(clave);
 
-            // 4. Guardar en BD
+            // 5. Guardar en BD
             Sql_Usuario sqlUsu = new Sql_Usuario();
             Sql_Acceso  sqlAcc = new Sql_Acceso();
             sqlUsu.insertarUsuario(beanUsu);
@@ -58,4 +68,5 @@ public class ServletAgreUsuario extends HttpServlet {
         }
     }
 }
+
 

@@ -14,13 +14,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Historial de Órdenes Finalizadas</title>
+<link rel="stylesheet" href="../css/main.css" type="text/css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<%@ include file="header.jsp" %>
-<%@ include file="menu_cliente.jsp" %>
+<jsp:include page="header.jsp" />
+<jsp:include page="menu_cliente.jsp" />
 
-<div class="container mt-4">
+<!-- Contenedor que empuja el footer hacia abajo -->
+<div id="contenido" class="container mt-4">
     <h2 class="mb-3">Historial de Órdenes Finalizadas</h2>
     <table class="table table-bordered table-striped">
         <thead class="table-dark">
@@ -64,6 +66,6 @@
     </table>
 </div>
 
-<%@ include file="footer.jsp" %>
+<jsp:include page="footer.jsp" />
 </body>
 </html>

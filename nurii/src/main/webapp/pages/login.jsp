@@ -1,23 +1,11 @@
-<%@ page contentType="text/html; charset=UTF-8" language="java" %>
+	<%@ page contentType="text/html; charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="../css/login.css" type="text/css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <style>
-    body {
-      background-color: #f0f2f5;
-    }
-    .login-container {
-      max-width: 400px;
-      margin: 80px auto;
-      padding: 30px;
-      background-color: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-  </style>
 </head>
 <body>
 	<jsp:include page="header.jsp" />

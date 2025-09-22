@@ -9,12 +9,12 @@
 </head>
 <body>
 <div id = "pie">
-	<p>&copy; 2025 Servicio de Taller Mecánico. Todos los derechos reservados.</p>
+	<p>&copy; 2025 Restaurante Tipico-Criollo. Todos los derechos reservados.</p>
             <div class="contact-info">
                 <h4>Contáctanos</h4>
-                <p>📍 Dirección: Av. Alfredo Mendiola 6062, Los Olivos</p>
-                <p>📧 Correo: TecnoFix@gmail.com</p>
-                <p>📞 Teléfono: +51 918 526 203</p>
+                <p>📍 Av. Leguía 270, Lambayeque, Peru</p>
+                <p>📧 Correo: elrincondelpatolambayeque@gmail.com</p>
+                <p>📞 Teléfono: +51 960 753 051</p>
             </div>
 </div>
 </body>

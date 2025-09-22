@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller Mecánico</title>
+    <title>El Rincón Del Pato</title>
     <link rel="stylesheet" href="../css/inicio.css" type="text/css">
     <link rel="stylesheet" href="../css/styles.css" type="text/css">
     <!-- Google Fonts -->
@@ -14,17 +14,13 @@
 </head>
 <body>
 
-<video autoplay loop muted id="video_background">
-    <source src="../videos/auto.mp4" type="video/mp4">
-</video>
-
 <%@ include file="header.jsp" %>
 <%@ include file="menu.jsp" %>
 
 <section id="inicio">
     <div class="container">
-        <h1>Bienvenidos a TecnoFix</h1>
-        <p>En TecnoFix, nos dedicamos a ofrecer los mejores servicios automotrices para mantener tu vehículo en perfecto estado. Con años de experiencia, garantizamos un servicio rápido y profesional.</p>
+        <h1>El Rincón Del Pato</h1>
+        <p>En El Rincón del Pato, te ofrecemos la auténtica gastronomía criolla del campo, con sabores tradicionales y platos preparados con pasión. Disfruta de una experiencia cálida.</p>
     </div>
 </section>
 
@@ -32,15 +28,19 @@
     <div class="grid-item">
         <div class="card-flip">
             <div class="card-inner">
-                <div class="card-front" style="background-image: url('../images/bienvenida.png');">
+                <div class="card-front" style="background-image: url('../images/Seco_de_cabrito.png');">
                     <div class="overlay">
-                        <h2>BIENVENIDA</h2>
+                        <h2>NOSOTROS</h2>
                     </div>
                 </div>
                 <div class="card-back">
-                    <div class="card-front" style="background-image: url('../images/bienvenida.png');">
-                        <ul>En nuestro taller, nos dedicamos a ofrecer los mejores servicios automotrices para mantener tu vehículo en perfecto estado. Con años de experiencia, garantizamos un servicio rápido y profesional.</ul>
-                    </div>
+			    <div class="card-front" style="background-image: url('../images/Card-fond.jpg'); font-weight: bold;">
+			        <ul style="margin-left: 50px; margin-right: 80px;">
+			          En nuestro restaurante, nos dedicamos a ofrecer los más auténticos sabores típicos del norte, preparados con ingredientes frescos y tradición familiar. Con años de experiencia, garantizamos un servicio cálido y una experiencia culinaria inolvidable.
+			        </ul>
+			    </div>
+			</div>
+
                 </div>
             </div>
         </div>
@@ -49,20 +49,22 @@
     <div class="grid-item">
         <div class="card-flip">
             <div class="card-inner">
-                <div class="card-front" style="background-image: url('../images/beneficios.png');">
+                <div class="card-front" style="background-image: url('../images/Shambar.png');">
                     <div class="overlay">
-                        <h2>BENEFICIOS</h2>
+                        <h2>POR QUE ELEGIRNOS</h2>
                     </div>
                 </div>
                 <div class="card-back">
-                    <div class="card-front" style="background-image: url('../images/beneficios.png');color: black; font-weight: bold;">
-                        <ul>
-                            <ul>✔  Servicio rápido y confiable</ul>
-                            <ul>✔  Atención personalizada</ul>
-                            <ul>✔  Precios competitivos</ul>
-                            <ul>✔  Piezas originales</ul>
-                            <ul>✔  Expertos en todo tipo de vehículos</ul>
+                    <div class="card-front"  style="background-image: url('../images/Card-fond.jpg');color: white; font-weight: bold;">
+                        <div class="overlay-back">
+                        <ul style="margin-left: 20px; margin-right: 70px;">
+                           	<ul>✔ Comida auténtica del norte</ul>
+							<ul>✔ Ingredientes frescos y locales</ul>
+							<ul>✔ Atención cálida y familiar</ul>
+							<ul>✔ Precios justos y accesibles</ul>
+							<ul>✔ Experiencia culinaria tradicional</ul>
                         </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -72,14 +74,14 @@
     <div class="grid-item">
         <div class="card-flip">
             <div class="card-inner">
-                <div class="card-front" style="background-image: url('../images/mision.png');">
+                <div class="card-front" style="background-image: url('../images/Sopa_seca.png');">
                     <div class="overlay">
                         <h2>MISIÓN</h2>
                     </div>
                 </div>
                 <div class="card-back">
-                    <div class="card-front" style="background-image: url('../images/mision.png');font-weight: bold;">
-                        <ul>Proporcionar un servicio automotriz de alta calidad y accesible, garantizando la satisfacción del cliente a través de un trabajo profesional, seguro y con tecnología de punta.</ul>
+                    <div class="card-front" style="background-image: url('../images/Card-fond.jpg');font-weight: bold;">
+                        <ul style="margin-left: 50px; margin-right: 80px;">Brindar una experiencia gastronómica de alta calidad y accesible, garantizando la satisfacción del comensal mediante platos tradicionales, preparados con ingredientes frescos y locales, en un ambiente acogedor y auténtico.</ul>
                     </div>
                 </div>
             </div>
@@ -89,14 +91,14 @@
     <div class="grid-item">
         <div class="card-flip">
             <div class="card-inner">
-                <div class="card-front" style="background-image: url('../images/vision.png');">
+                <div class="card-front" style="background-image: url('../images/Seco_de_cabrito.png');">
                     <div class="overlay">
                         <h2>VISIÓN</h2>
                     </div>
                 </div>
                 <div class="card-back">
-                    <div class="card-front" style="background-image: url('../images/vision.png');font-weight: bold;">
-                        <ul>Ser reconocidos como el taller líder en soluciones automotrices de la región, destacando por excelencia, innovación y compromiso con nuestros clientes.</ul>
+                    <div class="card-front" style="background-image: url('../images/Card-fond.jpg');font-weight: bold;">
+                        <ul style="margin-left: 50px; margin-right: 80px;">Ser reconocidos como el restaurante líder en gastronomía típica del norte, destacando por la excelencia de nuestros platos, la autenticidad de nuestras recetas y el compromiso con la satisfacción de nuestros comensales.</ul>
                     </div>
                 </div>
             </div>
@@ -107,7 +109,7 @@
 <!-- Redes sociales -->
 <div class="wsp">
     <a href="https://wa.me/918526203" target="_blank">
-        <img src="../images/whatsapp.png" alt="WhatsApp">
+        <img src="../images/whsp.png" alt="WhatsApp">
     </a>
 </div>
 <div class="ig">

@@ -9,8 +9,8 @@
 </head>
 <body>
 <div id = "encabezado">
-	<img src = "../images/logo.png" alt = "logo de la empresa" style = "height: 180px">
-	<h1>Taller Mecánico</h1>
+	<img src = "../images/logo1.png" alt = "logo de la empresa" style = "height: 90px">
+	<h1>Restaurante Tipico-Criollo</h1>
 </div>
 </body>
 </html>

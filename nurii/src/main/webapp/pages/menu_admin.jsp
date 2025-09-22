@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Menu Admin</title>
-<link rel = "stylesheet" href = "../../css/estilo.css" type = "text/css">
+<link rel = "stylesheet" href = "../../css/admin_menu.css" type = "text/css">
 </head>
 <body>
     <div id="menu_admin">

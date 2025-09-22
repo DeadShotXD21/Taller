@@ -1,75 +1,79 @@
-/* Fondo general */
+/* Fondo con imagen */
 body {
-  background: linear-gradient(135deg, #8B5E3C, #A97149);
+  background: url("../images/fondo_login.jpg") no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Contenedor del login */
+/* Sombra suave para destacar el formulario sobre la imagen */
 .login-container {
-  width: 100%;
   max-width: 400px;
-  padding: 35px 30px;
-  background: #fff;
+  margin: auto;
+  margin-top: 80px;
+  padding: 40px 30px;
+  background: rgba(255, 255, 255, 0.9); /* un poco transparente */
   border-radius: 15px;
-  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
-  animation: fadeIn 0.7s ease-in-out;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.8s ease-in-out;
 }
 
-/* Animación */
+/* Animación de entrada */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 /* Título */
 .login-container h3 {
   font-weight: bold;
-  color: #8B5E3C;
-  margin-bottom: 25px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Labels */
-.form-label {
+.login-container .form-label {
   font-weight: 600;
-  color: #444;
+  color: #555;
 }
 
 /* Inputs */
-.form-control {
+.login-container .form-control {
   border-radius: 10px;
   padding: 12px;
   border: 1px solid #ccc;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.form-control:focus {
-  border-color: #A97149;
-  box-shadow: 0 0 6px rgba(169, 113, 73, 0.5);
+.login-container .form-control:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
 }
 
 /* Botón */
-.btn-primary {
-  background: linear-gradient(135deg, #A97149, #8B5E3C);
+.login-container button {
+  background: #6c63ff;
   border: none;
   border-radius: 10px;
   padding: 12px;
+  font-size: 1rem;
   font-weight: bold;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s;
 }
 
-.btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+.login-container button:hover {
+  background: #5848d6;
+  transform: scale(1.02);
 }
 
-/* Enlace de registro */
+/* Link de registro */
 .login-container a {
-  color: #A97149;
+  color: #6c63ff;
   font-weight: 600;
   text-decoration: none;
 }
@@ -81,6 +85,5 @@ body {
 /* Mensajes */
 .alert {
   border-radius: 10px;
-  padding: 12px;
-  font-size: 0.95rem;
+  font-weight: 500;
 }
