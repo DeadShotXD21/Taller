@@ -1,0 +1,86 @@
+/* Fondo general */
+body {
+  background: linear-gradient(135deg, #8B5E3C, #A97149);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+/* Contenedor del login */
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 35px 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Título */
+.login-container h3 {
+  font-weight: bold;
+  color: #8B5E3C;
+  margin-bottom: 25px;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  color: #444;
+}
+
+/* Inputs */
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #A97149;
+  box-shadow: 0 0 6px rgba(169, 113, 73, 0.5);
+}
+
+/* Botón */
+.btn-primary {
+  background: linear-gradient(135deg, #A97149, #8B5E3C);
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Enlace de registro */
+.login-container a {
+  color: #A97149;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* Mensajes */
+.alert {
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 0.95rem;
+}
