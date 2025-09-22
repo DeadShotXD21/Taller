@@ -1,0 +1,91 @@
+/* Estilos para el dashboard */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f9f9f9, #e9ecef); /* Fondo suave en degradado */
+}
+
+/* Contenedor principal */
+#dashboard-admin {
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    margin: 2rem auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Grid adaptable */
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Tarjetas */
+.card-admin {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-admin:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+/* Iconos dentro de las tarjetas */
+.card-admin i {
+    font-size: 2.5rem;
+    color: #28a745; /* Verde principal */
+    margin-bottom: 1rem;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #28a745;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #1e7e34;
+    transform: scale(1.05);
+}
+
+/* Botones flotantes (WhatsApp e Instagram) */
+.wsp, .ig {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 1000;
+}
+
+.wsp a, .ig a {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.wsp a:hover, .ig a:hover {
+    background: #1e7e34;
+    transform: scale(1.1);
+}
